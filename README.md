@@ -1,0 +1,2 @@
+# js_num_to_kanjinum_converter
+文字列中の全角/半角英数字を全て漢数字に変換する関数
