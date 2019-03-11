@@ -42,6 +42,7 @@ const convertNumToKanjiNum = (num) => {
  * @return {[type]}      [description]
  */
 const convertZenkakuHankakuNumToKanjiNum = (text) => {
+  // 全角があれば半角に変換
   const n = text.replace(/[Ａ-Ｚａ-ｚ０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xfee0));
   return convertNumToKanjiNum(n);
 };
